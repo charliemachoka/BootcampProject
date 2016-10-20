@@ -1,0 +1,33 @@
+{% extends "header.html" %}
+{% block body %}
+
+<form action="{{ url_for('signup') }}" method = "post">
+	<h2>Enter Your Details Here to Sign Up</h2>
+  <div class="form-group">
+ 
+      <input type="username" class="form-control" id="username" name='username' placeholder="Enter username">
+
+  </div>
+
+
+  <div class="form-group">
+
+      <input type="email" class="form-control" id="email" name='email' placeholder="Enter email">
+
+  </div>
+
+
+  <div class="form-group">
+
+      <input type="password" class="form-control" id="pwd" name='pwd' placeholder="Enter password">
+
+  </div>
+
+  <div class="form-group"> 
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+  </div>
+</form>
+
+{% endblock %}

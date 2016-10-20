@@ -1,0 +1,32 @@
+{% extends "header.html" %}
+{% block body %}
+ 
+  <form action="/login/" method="post">
+    <h2>Welcome , Sign in to your application </h2>
+    <div class="form-group">
+        <div class="controls">
+          <input type="text" id="username" name="username" class="form-control"
+            placeholder="Enter Username" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="controls">
+          <input type="password" id="password" name="password" class="form-control"
+            placeholder="Enter Password" required>
+        </div>
+    </div>
+
+     <div class="form-group">
+        <div class="controls">
+          <input type="checkbox" id="remember_me" name="remember_me">Remember me
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="controls">
+          <button type="submit" class="btn btn-success">Login in</button>
+        </div>
+    </div>
+  </form>
+{% endblock %}
