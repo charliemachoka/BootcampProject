@@ -1,10 +1,17 @@
 from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
-
+from sqlalchemy.orm import sessionmaker
 
 
 Base = declarative_base()
+
+engine = create_engine('sqlite:///todo.db')
+Base.metadata.bind = engine
+DBSession = sessionmaker(bind=engine)
+
+
+
 
 class TodoList(Base):
     __tablename__ = 'todo'

@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask , flash
 from flask import render_template, redirect, url_for
 from flask import request
 from models import User
@@ -13,7 +13,7 @@ def home():
 @app.route("/login/",methods=["POST","GET"])
 def login():
 	if request.method == "POST":
-		return render_template("login.html")
+		return redirect(url_for('optionspage'))
 
 	return render_template("login.html")
 
