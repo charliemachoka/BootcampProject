@@ -42,9 +42,9 @@
     >`https://github.com/charliemachoka/BootcampProject`
 
 *  Navigate to the repo's folder on your computer
+*  Activate the virtual Environment using Terminal
+*  on Terminal type (main.py) to run the app 
+*  Refresh Your browser and go to local host 127.0.0.1:5000 
 
-*  Install the app's backend dependencies. For best results, using a [virtual environment]
-  *  `pip install -r requirements`
-*  Install the app's database. The default `SQlalchemy` was used for development.
 
   
